@@ -1,0 +1,26 @@
+/*{
+  "author": "Sarah Samora",
+  "description": "Color codes instructor names on Plan A Student Schedule (PASS) based on PolyRatings",
+  "manifest_version": 2,
+  "omnibox": {
+      "keyword": "rating"
+   },
+  "name": "Pass Plaaning",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.pass.calpoly.edu/*"],
+      "js": ["jquery-3.3.1.min.js", "PolyRatingsForPass.js"]
+    }
+  ],
+
+  "permissions": [
+    "http://polyratings.com/*", "activeTab", "contextMenus", "storage", "webRequest"
+  ],
+  "short_name": "Pass Planning",
+
+}*/
